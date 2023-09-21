@@ -1,0 +1,187 @@
+package banking;
+
+public class Bitwise {
+
+	public static void main(String[] args) {
+		// bitwise and(&),or(|),xor(^),left(<<),right(>>) 0 and 1
+		int x=10,y=3;//1010,0011
+		System.out.println(x&y);//1010 & 0011(0010)(2)
+		System.out.println(x|y);//1010 | 0011 (1011)(11)
+		System.out.println(x^y);//1010 ^ 0011 (1001)(9)
+		System.out.println(x<<y);//1010000 (80)
+		System.out.println(x>>y);//1 (1)
+		
+
+	}
+
+}
+
+package banking;
+
+public class Bitwise2 {
+
+	public static void main(String[] args) {
+		//bitwise
+		int a=12,b=4;//1100 0100
+		System.out.println(a&b);//1100 & 0100(0100) (4)
+		System.out.println(a|b);//1100 | 0100 (1100)(12)
+		System.out.println(a^b);// 1100 ^ 0100 (1000)(8)
+		System.out.println(a<<b);// 11000000(192)
+		System.out.println(a>>b);//1100(0)
+
+	}
+
+}
+
+package banking;
+
+public class Bitwise3 {
+
+	public static void main(String[] args) {
+		// bitwise with 3 variables
+		int a=10,b=3,c=2;//1010 0011  0010
+		System.out.println(a&b&c);//1010 0011 (0010) & (0010) (0010) (2)
+		System.out.println(a|b|c);//1010 | 0011 (1011 | 0010) (1011) (11)
+		System.out.println(a^b^c);//1010 ^ 0011 (1001) ^ (0010) =1011 (11)
+		System.out.println(a<<b>>c);//10100(20)
+
+	}
+
+}
+
+package banking;
+
+import java.util.Scanner;
+
+public class Scannerdemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  int sno;
+  String sname;
+  double att;
+  Scanner sc=new Scanner(System.in);
+  System.out.println("enter student details");
+  sno=sc.nextInt();
+  sname=sc.next();
+  att=sc.nextDouble();
+  System.out.println("sno is "+sno+" sname is  "+sname+" att is  "+att);
+	}
+
+}
+package banking;
+
+import java.util.Scanner;
+
+public class Emps {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int eid;
+		String ename;
+		double sal;
+		System.out.println("enter emp details");
+		Scanner sc=new Scanner(System.in);
+		eid=sc.nextInt();
+		ename=sc.next();
+		sal=sc.nextDouble();
+		System.out.println("eid is "+eid+" ename is "+ename+" sal is "+sal);
+
+	}
+
+}
+
+package banking;
+
+public class Datatypes {
+
+	public static void main(String[] args) {
+		// all datatypes
+		byte x=10;//1 byte [-128 to +127]
+		short y=2000;//2 bytes [-32768 to +32767]
+		int z=1500009;//4 bytes [- 2 pow 31 to +2 pow 31 -1]
+		long m=423523552;//8 bytes [- 2p pow 63 to +2 pow 63 -1]
+		float n=45.645f;//4 bytes [7 points]
+		double p=43.34634634;//8 bytes [15 points]
+		char q='a';//2 bytes [unicode 65536 chars]
+		String r="sairam@123";//each char 2 bytes
+		boolean s=true;//1 byte
+		System.out.println(x+" "+y+" "+z+" "+m+" "+n+" "+p+" "+q+" "+r+" "+s);
+		
+
+	}
+
+}
+package banking;
+
+public class Operators {
+
+	public static void main(String[] args) {
+		//all operators
+		int x,y,z;
+		x=10;// = assignment
+		x+=3;// += multiple assignment x=x+3
+		x++;// ++ unary
+		y=x;
+		System.out.println(x>y);// > relational //x=14
+		z=5;
+		System.out.println((x>4) && (z>4)); // true  && logical and
+		System.out.println(x==y);//true == relational
+		int s;
+		s=(x>10)?x:y;// ? : ternary operator
+		System.out.println(s);
+		System.out.println(x^z);//bitwise xor(^)
+		
+		
+
+	}
+
+}
+
+package banking;
+
+import java.util.Scanner;
+
+public class Conversions {
+
+	public static void main(String[] args) {
+		//
+		int x=011;//0 prefix octal (8) 1  1
+		int y=0x10;//0x prefix hexadecimal (16)  1  0
+		int z=0b100;//0b prefix binary (2) 1 0 0
+		int m=10;//decimal int (10) 1  0
+		//binary base(2) 0,1
+		//octal base(8) 0...7
+		//decimal base(10) 0...9
+		//hexa decimal base(16) 0..9,A(10),B(11)...F(15)
+		
+		System.out.println(x+" "+y+" "+z+" "+m);
+
+	}
+
+}
+package banking;
+
+import java.util.Scanner;
+
+public class Students {
+
+	public static void main(String[] args) {
+		// input 3 student marks and calc total,avg
+		int m1,m2,m3,total;
+		double avg;
+		System.out.println("enter marks");
+		Scanner sc=new Scanner(System.in);
+		m1=sc.nextInt();
+		m2=sc.nextInt();
+		m3=sc.nextInt();
+		total=m1+m2+m3;
+		avg=total/3;
+		System.out.println(total+" "+avg);
+		
+
+	}
+
+}
+
+
