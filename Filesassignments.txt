@@ -1,0 +1,125 @@
+1)
+
+
+package dontknow;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+
+public class Labfile1 {
+
+	public static void main(String[] args) throws IOException {
+		FileOutputStream fos=new FileOutputStream("d:\\emp77.txt");
+        PrintStream ps=new PrintStream(fos);
+        ps.println(35);
+        ps.println("balaji");
+        ps.println(2000.0);
+        fos.close();
+        ps.close();
+        System.out.println("emp details ");
+        
+	}
+
+}
+
+
+2)
+
+
+package dontknow;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Labfile2 {
+
+	public static void main(String[] args) throws IOException {
+		FileWriter fw=new FileWriter("d:\\mad.txt");
+		FileReader fr=new FileReader("d:\\mad.txt");
+		fw.write("lab ativity");
+		  int i;  
+		  while((i=fr.read())!=-1)  
+	 	  System.out.print(i); 
+		  System.out.println("sucess");
+		  fw.close();
+		  fr.close();
+	}
+
+}
+
+
+3)
+
+package dontknow;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Labfile4{
+
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the rollno");
+		int rollno=sc.nextInt();
+		System.out.println("enter the name");
+		String name=sc.next();
+		System.out.println("enter the salary");
+		Double salary=sc.nextDouble();
+		System.out.println("enter the boolean value (true/false):");
+		Boolean value=sc.nextBoolean();
+		System.out.println(rollno+" "+name+" "+salary+" "+value);
+	}
+
+}
+
+
+4)
+
+
+import java.io.BufferedReader;
+import java.io.Console;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Buffer1 {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		Console c=System.console();  
+		System.out.println("Enter password: ");  
+		char[] ch=c.readPassword();  
+		String pass=String.valueOf(ch);//converting char array into string  
+		System.out.println("Password is: ");  
+	}
+
+}
+
+
+5)
+
+
+package dontknow;
+
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
+
+public class Labfile3{
+
+	public static void main(String[] args) throws IOException {
+		FileOutputStream fos=new FileOutputStream("d:\\emp777.txt");
+		FileWriter fw1=new FileWriter("fos");
+		PrintStream ps1=new PrintStream(fos);
+		fw1.write("sucess");
+		ps1.println("charan");
+		ps1.println("balaji");
+		ps1.println(24);
+		System.out.println("loading....");
+	}
+
+}
